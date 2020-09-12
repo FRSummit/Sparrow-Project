@@ -4,7 +4,11 @@
     <div class="top-bar-section-desktop">
       <!-- logo & menu -->
       <div class="logo-section">
-        <div class="menu-icon-sec">&#9776;</div>
+        <div class="menu-icon-sec">
+          <a>
+            <i class="fas fa-bars"></i>
+          </a>
+        </div>
         <div class="logo-sec">
           <img src="../assets/images/logo.webp" alt="logo" />
         </div>
@@ -22,9 +26,9 @@
       </div>
       <!-- cart & account login -->
       <div class="help-ac-cart-section">
-        <div class="trade-help-section">
+        <div class="trade-help-sec">
           <span class="trade-sec">
-            Trade with us
+            Trade
             <i class="fa fa-globe"></i>
           </span>
           <span class="help-sec">
@@ -84,10 +88,6 @@
         </form>
       </div>
     </div>
-
-
-
-
 
     <div class="topnav" id="myTopnav">
       <a class="active">Home</a>
