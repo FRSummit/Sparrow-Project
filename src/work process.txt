@@ -1,0 +1,2 @@
+>> npm install jquery --save
+>> npm install --save-dev @fortawesome/fontawesome-free

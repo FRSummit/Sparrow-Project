@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+}
+
+/*Side Menu*/
+
+#sidebar .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 48px;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+#sidebar .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+#sidebar .sidenav a:hover {
+    color: #f1f1f1;
+}
+
+#sidebar .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    padding: 0;
+}
+
+@media screen and (max-height: 450px) {
+    #sidebar .sidenav {
+        padding-top: 15px;
+    }
+    #sidebar .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/***** TOP MENU *****/
+
+/* Desktop style */
+
+#top-menu .top-bar-section-desktop {
+    display: block;
+}
+
+#top-menu .top-bar-section-mobile {
+    display: none;
+}
+#top-menu .logo-section {
+    display: inline-block;
+    width: 24%;
+    text-align: left;
+}
+#top-menu .logo-section .menu-icon-sec {}
+#top-menu .logo-section .logo-sec {}
+#top-menu .logo-section .logo-sec img {}
+#top-menu .search-section {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+#top-menu .search-section .search-form {}
+#top-menu .search-section input {}
+#top-menu .search-section button {}
+#top-menu .help-ac-cart-section {
+    display: inline-block;
+    width: 24%;
+    text-align: right;
+}
+#top-menu .help-ac-cart-section .trade-help-section {}
+#top-menu .help-ac-cart-section .trade-help-section .trade-help-section {}
+#top-menu .help-ac-cart-section .trade-help-section .trade-sec {}
+#top-menu .help-ac-cart-section .trade-help-section .help-sec {}
+#top-menu .help-ac-cart-section .account-section{}
+#top-menu .help-ac-cart-section .account-section span:nth-child(1) {}
+#top-menu .help-ac-cart-section .account-section span:nth-child(2) {}
+#top-menu .help-ac-cart-section .cart-section {}
+#top-menu .help-ac-cart-section .cart-section span:nth-child(1) {}
+#top-menu .help-ac-cart-section .cart-section span:nth-child(2) {}
+#top-menu .help-ac-cart-section .cart-section span:nth-child(3) {}
+
+/* Mobile style */
+
+@media screen and (max-width: 768px) {
+    #top-menu .top-bar-section-desktop {
+        display: none;
+    }
+    #top-menu .top-bar-section-mobile {
+        display: block;
+    }
+    #top-menu .logo-section {}
+    #top-menu .logo-section .menu-icon-sec {}
+    #top-menu .logo-section .logo-sec {}
+    #top-menu .logo-section .logo-sec img {}
+    #top-menu .search-section {}
+    #top-menu .search-section .search-form {}
+    #top-menu .search-section input {}
+    #top-menu .search-section button {}
+    #top-menu .help-ac-cart-section {}
+    #top-menu .help-ac-cart-section .trade-help-section {}
+    #top-menu .help-ac-cart-section .trade-help-section .trade-help-section {}
+    #top-menu .help-ac-cart-section .trade-help-section .trade-sec {}
+    #top-menu .help-ac-cart-section .trade-help-section .help-sec {}
+    #top-menu .help-ac-cart-section .account-section{}
+    #top-menu .help-ac-cart-section .account-section span:nth-child(1) {}
+    #top-menu .help-ac-cart-section .account-section span:nth-child(2) {}
+    #top-menu .help-ac-cart-section .cart-section {}
+    #top-menu .help-ac-cart-section .cart-section span:nth-child(1) {}
+    #top-menu .help-ac-cart-section .cart-section span:nth-child(2) {}
+    #top-menu .help-ac-cart-section .cart-section span:nth-child(3) {}
+}
+
+#top-menu .topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+#top-menu .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#top-menu .topnav a:hover {
+    /* background-color: #ddd; */
+    color: #FFF;
+    background-color: transparent;
+}
+
+#top-menu .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#top-menu .topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    #top-menu .topnav a:not(:first-child) {
+        display: none;
+    }
+    #top-menu .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #top-menu .topnav.responsive {
+        position: relative;
+    }
+    #top-menu .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    #top-menu .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/***** TOP MENU *****/
