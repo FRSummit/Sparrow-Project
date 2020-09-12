@@ -54,6 +54,7 @@ body {
 #top-menu .top-bar-section-desktop {
     display: block;
     padding: 8px 0;
+    text-align: center;
 }
 
 #top-menu .top-bar-section-mobile {
@@ -73,11 +74,24 @@ body {
     position: relative;
     width: 40px;
     color: #777777;
-    margin-left: 16px;
+    margin-left: 10px;
+}
+#top-menu .logo-section .menu-icon-sec::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 35px;
+    margin-top: -17.5px;
+    top: 50%;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    border-right: 2px solid #ddd;
 }
 #top-menu .logo-section .logo-sec {
     display: inline-block;
     vertical-align: middle;
+    margin-left: 16px;
 }
 #top-menu .logo-section .logo-sec img {
     width: 140px;
@@ -97,9 +111,10 @@ body {
     margin: 0;
     border-radius: 5px;
     padding-right: 80px;
-    border: 1px solid #d0d0d1;
+    border: 1px solid #E30047;
     height: 20px;
     width: -webkit-fill-available;
+    outline: none;
 }
 #top-menu .search-section button {
     top: 0;
@@ -117,6 +132,7 @@ body {
     text-transform: uppercase;
     background-color: #E30047;
     cursor: pointer;
+    outline: none;
 }
 /*Trade-Help-Login-Cart*/
 #top-menu .help-ac-cart-section {
@@ -127,20 +143,43 @@ body {
 }
 #top-menu .help-ac-cart-section .trade-help-sec {
     display: inline-block;
+    padding: 6px;
+    color: #E30047;
 }
-#top-menu .help-ac-cart-section .trade-help-section .trade-sec {}
-#top-menu .help-ac-cart-section .trade-help-section .help-sec {}
+#top-menu .help-ac-cart-section .trade-help-sec .trade-sec {
+    padding-right: 16px;
+    cursor: pointer;
+}
+#top-menu .help-ac-cart-section .trade-help-sec .help-sec {
+    cursor: pointer;
+}
 #top-menu .help-ac-cart-section .account-section{
     display: inline-block;
+    padding: 6px;
+    cursor: pointer;
+    color: #E30047;
 }
-#top-menu .help-ac-cart-section .account-section span:nth-child(1) {}
-#top-menu .help-ac-cart-section .account-section span:nth-child(2) {}
+#top-menu .help-ac-cart-section .account-section span:nth-child(1) {
+    padding: 6px;
+}
+#top-menu .help-ac-cart-section .account-section span:nth-child(2) {
+}
 #top-menu .help-ac-cart-section .cart-section {
     display: inline-block;
+    padding: 6px;
+    cursor: pointer;
+    color: #E30047;
 }
-#top-menu .help-ac-cart-section .cart-section span:nth-child(1) {}
-#top-menu .help-ac-cart-section .cart-section span:nth-child(2) {}
-#top-menu .help-ac-cart-section .cart-section span:nth-child(3) {}
+#top-menu .help-ac-cart-section .cart-section span:nth-child(1) {
+    padding-right: 2px;
+}
+#top-menu .help-ac-cart-section .cart-section span:nth-child(2) {
+    font-weight: bold;
+    border: 1px solid #E30047;
+    border-radius: 20px;
+    padding: 0px 6px;
+    outline: none;
+}
 
 /* Mobile style */
 

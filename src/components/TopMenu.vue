@@ -28,7 +28,6 @@
       <div class="help-ac-cart-section">
         <div class="trade-help-sec">
           <span class="trade-sec">
-            Trade
             <i class="fa fa-globe"></i>
           </span>
           <span class="help-sec">
@@ -39,14 +38,13 @@
           <span>
             <i class="fas fa-user"></i>
           </span>
-          <span>Sign In</span>
+          <span>Sign in</span>
         </div>
         <div class="cart-section">
-          <span>My Cart</span>
           <span>
             <i class="fas fa-shopping-cart"></i>
           </span>
-          <span class="total-cart-item">0</span>
+          <span class="total-cart-item">5</span>
         </div>
       </div>
     </div>
