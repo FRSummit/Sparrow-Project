@@ -5,9 +5,20 @@
       <!-- logo & menu -->
       <div class="logo-section">
         <div class="menu-icon-sec">
-          <a>
+          <a @click="openSideNav()">
             <i class="fas fa-bars"></i>
           </a>
+          <!-- SIDE NAVIGATION -->
+          <!-- <div id="side-navigation-menu" class="side-navigation-menu">
+            <p>Categories</p>
+            <a class="closebtn" @click="closeNav()">
+              <i class="fas fa-arrow-left"></i>
+            </a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>-->
         </div>
         <div class="logo-sec">
           <img src="../assets/images/logo.webp" alt="logo" />
@@ -53,7 +64,22 @@
     <div class="top-bar-section-mobile">
       <!-- logo & menu -->
       <div class="logo-section">
-        <div class="menu-icon-sec">&#9776;</div>
+        <div class="menu-icon-sec">
+          <a @click="openSideNav()">
+            <i class="fas fa-bars"></i>
+          </a>
+          <!-- SIDE NAVIGATION -->
+          <!-- <div id="side-navigation-menu" class="side-navigation-menu">
+            <p>Categories</p>
+            <a class="closebtn" @click="closeNav()">
+              <i class="fas fa-arrow-left"></i>
+            </a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>-->
+        </div>
         <div class="logo-sec">
           <img src="../assets/images/logo.webp" alt="logo" />
         </div>
@@ -67,7 +93,6 @@
           <span>Sign In</span>
         </div>
         <div class="cart-section">
-          <span>My Cart</span>
           <span>
             <i class="fas fa-shopping-cart"></i>
           </span>
@@ -87,16 +112,27 @@
       </div>
     </div>
 
-    <div class="topnav" id="myTopnav">
+    <!-- SIDE NAVIGATION -->
+    <div id="side-navigation-menu" class="side-navigation-menu">
+      <p>Categories</p>
+      <a class="closebtn" @click="closeNav()">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+      <a href="#">About<span><i class="fas fa-chevron-right"></i></span></a>
+      <a href="#">Services<span><i class="fas fa-chevron-right"></i></span></a>
+      <a href="#">Clients<span><i class="fas fa-chevron-right"></i></span></a>
+      <a href="#">Contact<span><i class="fas fa-chevron-right"></i></span></a>
+    </div>
+
+    <!-- <div class="topnav" id="myTopnav">
       <a class="active">Home</a>
       <a>News</a>
       <a>Contact</a>
       <a>About</a>
       <a class="icon" @click="myFunction()">
-        <!-- <i class="fa fa-bars"></i> -->
         &#9776;
       </a>
-    </div>
+    </div>-->
   </div>
 </template>
 
@@ -105,13 +141,25 @@ export default {
   name: "TopMenu",
   components: {},
   methods: {
-    myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
+    // myFunction() {
+    //   var x = document.getElementById("myTopnav");
+    //   if (x.className === "topnav") {
+    //     x.className += " responsive";
+    //   } else {
+    //     x.className = "topnav";
+    //   }
+    // },
+    openSideNav() {
+      if (
+        document.getElementById("side-navigation-menu").style.width !== "200px"
+      ) {
+        document.getElementById("side-navigation-menu").style.width = "200px";
       } else {
-        x.className = "topnav";
+        document.getElementById("side-navigation-menu").style.width = "0";
       }
+    },
+    closeNav() {
+      document.getElementById("side-navigation-menu").style.width = "0";
     },
   },
 };

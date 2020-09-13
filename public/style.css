@@ -1,10 +1,11 @@
 body {
     margin: 0;
+    font-family: sans-serif;
 }
 
 /*Side Menu*/
 
-#sidebar .sidenav {
+/* #sidebar .sidenav {
     height: 100%;
     width: 0;
     position: fixed;
@@ -45,7 +46,7 @@ body {
     #sidebar .sidenav a {
         font-size: 18px;
     }
-}
+} */
 
 /***** TOP MENU *****/
 
@@ -55,18 +56,25 @@ body {
     display: block;
     padding: 8px 0;
     text-align: center;
+    border-bottom: 1px solid #b7b5b5;
 }
 
 #top-menu .top-bar-section-mobile {
     display: none;
+    padding: 8px 0;
+    text-align: center;
+    border-bottom: 1px solid #b7b5b5;
 }
+
 /*Logo*/
+
 #top-menu .logo-section {
     display: inline-block;
     width: 24%;
     text-align: left;
     vertical-align: middle;
 }
+
 #top-menu .logo-section .menu-icon-sec {
     display: inline-block;
     vertical-align: middle;
@@ -74,8 +82,15 @@ body {
     position: relative;
     width: 40px;
     color: #777777;
-    margin-left: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+    /* position: relative; */
 }
+
+/* #top-menu .logo-section .menu-icon-sec:hover .side-navigation-menu {
+    display: block;
+} */
+
 #top-menu .logo-section .menu-icon-sec::after {
     content: '';
     display: block;
@@ -88,24 +103,30 @@ body {
     right: 0;
     border-right: 2px solid #ddd;
 }
+
 #top-menu .logo-section .logo-sec {
     display: inline-block;
     vertical-align: middle;
     margin-left: 16px;
 }
+
 #top-menu .logo-section .logo-sec img {
-    width: 140px;
+    width: 120px;
 }
+
 /*Search*/
+
 #top-menu .search-section {
     display: inline-block;
     width: 45%;
     text-align: center;
     vertical-align: middle;
 }
+
 #top-menu .search-section .search-form {
     position: relative;
 }
+
 #top-menu .search-section input {
     padding: 8px;
     margin: 0;
@@ -116,6 +137,7 @@ body {
     width: -webkit-fill-available;
     outline: none;
 }
+
 #top-menu .search-section button {
     top: 0;
     right: 0;
@@ -134,51 +156,121 @@ body {
     cursor: pointer;
     outline: none;
 }
+
 /*Trade-Help-Login-Cart*/
+
 #top-menu .help-ac-cart-section {
     display: inline-block;
     width: 30%;
     text-align: right;
     vertical-align: middle;
 }
+
 #top-menu .help-ac-cart-section .trade-help-sec {
     display: inline-block;
     padding: 6px;
     color: #E30047;
 }
+
 #top-menu .help-ac-cart-section .trade-help-sec .trade-sec {
     padding-right: 16px;
     cursor: pointer;
 }
+
 #top-menu .help-ac-cart-section .trade-help-sec .help-sec {
     cursor: pointer;
 }
-#top-menu .help-ac-cart-section .account-section{
+
+#top-menu .help-ac-cart-section .account-section {
     display: inline-block;
     padding: 6px;
     cursor: pointer;
     color: #E30047;
 }
+
 #top-menu .help-ac-cart-section .account-section span:nth-child(1) {
     padding: 6px;
 }
-#top-menu .help-ac-cart-section .account-section span:nth-child(2) {
-}
+
+#top-menu .help-ac-cart-section .account-section span:nth-child(2) {}
+
 #top-menu .help-ac-cart-section .cart-section {
     display: inline-block;
     padding: 6px;
     cursor: pointer;
     color: #E30047;
 }
+
 #top-menu .help-ac-cart-section .cart-section span:nth-child(1) {
     padding-right: 2px;
 }
+
 #top-menu .help-ac-cart-section .cart-section span:nth-child(2) {
     font-weight: bold;
     border: 1px solid #E30047;
     border-radius: 20px;
     padding: 0px 6px;
     outline: none;
+}
+
+/* Side Navigation Menu */
+
+#side-navigation-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 56px;
+    left: 0;
+    border: 1px solid #dedede;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    opacity: 1;
+    /* display: none;
+    position: absolute;
+    left: -4px;
+    background-color: #efefef;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; */
+}
+
+#side-navigation-menu p {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 4px 8px;
+    color: #444;
+    margin: 0 0 10px;
+}
+
+#side-navigation-menu a {
+    padding: 4px 8px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #444;
+    display: block;
+    transition: 0.3s;
+}
+
+#side-navigation-menu a span {
+    float: right;
+    font-size: 12px;
+}
+
+#side-navigation-menu a:hover {
+    color: #E30047;
+    background-color: #e3004717;
+    text-decoration: underline;
+}
+
+#side-navigation-menu .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 16px;
+    padding: 0;
+    cursor: pointer;
 }
 
 /* Mobile style */
@@ -190,26 +282,41 @@ body {
     #top-menu .top-bar-section-mobile {
         display: block;
     }
-    #top-menu .logo-section {}
-    #top-menu .logo-section .menu-icon-sec {}
+    #top-menu .logo-section {
+        width: 49%;
+    }
+    #top-menu .logo-section .menu-icon-sec {
+        font-size: 20px;
+    }
     #top-menu .logo-section .logo-sec {}
-    #top-menu .logo-section .logo-sec img {}
-    #top-menu .search-section {}
+    #top-menu .logo-section .logo-sec img {
+        width: 100px;
+    }
+    #top-menu .search-section {
+        width: 80%;
+        display: block;
+        margin: 8px auto 0;
+    }
     #top-menu .search-section .search-form {}
     #top-menu .search-section input {}
     #top-menu .search-section button {}
-    #top-menu .help-ac-cart-section {}
+    #top-menu .help-ac-cart-section {
+        width: 50%;
+    }
     #top-menu .help-ac-cart-section .trade-help-section {}
     #top-menu .help-ac-cart-section .trade-help-section .trade-help-section {}
     #top-menu .help-ac-cart-section .trade-help-section .trade-sec {}
     #top-menu .help-ac-cart-section .trade-help-section .help-sec {}
-    #top-menu .help-ac-cart-section .account-section{}
+    #top-menu .help-ac-cart-section .account-section {}
     #top-menu .help-ac-cart-section .account-section span:nth-child(1) {}
     #top-menu .help-ac-cart-section .account-section span:nth-child(2) {}
     #top-menu .help-ac-cart-section .cart-section {}
     #top-menu .help-ac-cart-section .cart-section span:nth-child(1) {}
     #top-menu .help-ac-cart-section .cart-section span:nth-child(2) {}
-    #top-menu .help-ac-cart-section .cart-section span:nth-child(3) {}
+    /* SIDE NAVIGATION MENU */
+    #side-navigation-menu {
+        top: 96px;
+    }
 }
 
 #top-menu .topnav {

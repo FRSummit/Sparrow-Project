@@ -2,7 +2,7 @@
   <div id="app">
     <div id="nav">
     <TopMenu />
-    <Sidebar />
+    <!-- <Sidebar /> -->
       <!-- <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> -->
     </div>
@@ -12,13 +12,13 @@
 
 <script>
 import TopMenu from './components/TopMenu'
-import Sidebar from './components/Sidebar'
+// import Sidebar from './components/Sidebar'
 
 export default {
   name: 'Home',
   components: {
     TopMenu,
-    Sidebar
+    // Sidebar
   }
 }
 </script>
