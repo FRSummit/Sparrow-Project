@@ -123,7 +123,7 @@
         </div>
         <div class="container">
           <div class="col-sm-12 col-xs-12 footer-logo">
-            <img alt="Datson" src="images/logo.png" />
+            <img alt="Datson" src="../../superb-template/images/logo.png" />
           </div>
           <address>
             <i class="fa fa-map-marker"></i>ThemesGround, 789 Main rd, Anytown, CA 12345 USA

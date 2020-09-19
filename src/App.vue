@@ -1,11 +1,13 @@
 <template>
   <div id="app">
-    <Header/>
-    <Navbar />
+    <div id="page">
+      <Header />
+      <Navbar />
+      <Slider />
+      <Footer />
+    </div>
     <MobileMenu />
-    <Slider />
-    <Footer />
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
@@ -13,28 +15,27 @@
 // import TopMenu from './components/TopMenu'
 // import Sidebar from './components/Sidebar'
 
-import Header from './components/Header/Header'
-import Navbar from './components/Navbar/Navbar'
-import MobileMenu from './components/Navbar/MobileMenu'
-import Slider from './components/Slider/Slider'
-import Footer from './components/Footer/Footer'
+import Header from "./components/Header/Header";
+import Navbar from "./components/Navbar/Navbar";
+import Slider from "./components/Slider/Slider";
+import Footer from "./components/Footer/Footer";
+import MobileMenu from "./components/Navbar/MobileMenu";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
     // TopMenu,
     // Sidebar,
     Header,
     Navbar,
-    MobileMenu,
     Slider,
     Footer,
-  }
-}
+    MobileMenu,
+  },
+};
 </script>
 
 <style>
 #app {
 }
-
 </style>

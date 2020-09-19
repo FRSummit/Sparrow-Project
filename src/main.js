@@ -4,11 +4,6 @@ import router from './router'
 import store from './store'
 import '@fortawesome/fontawesome-free/css/all.css'
 import '@fortawesome/fontawesome-free/js/all.js'
-
-// global.jQuery = require('jQuery')
-// var $ = global.jQuery
-// window.$ = $;
-
 Vue.config.productionTip = false
 
 // global.jQuery = require('jquery');
