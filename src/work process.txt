@@ -1,2 +1,5 @@
 >> npm install jquery --save
 >> npm install --save-dev @fortawesome/fontawesome-free
+>> npm install --save jQuery
+>> npm install --save location navigator xmlhttprequest
+>> npm install expose-loader --save-dev
