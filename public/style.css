@@ -135,6 +135,7 @@ body {
     border: 1px solid #E30047;
     height: 20px;
     width: -webkit-fill-available;
+    width: -moz-available;
     outline: none;
 }
 
@@ -236,41 +237,94 @@ body {
     z-index: 1; */
 }
 
-#side-navigation-menu p {
-    font-size: 22px;
+#side-navigation-menu p, .subcategories-section p, .tertiarycategories-section p {
+    font-size: 20px;
     font-weight: bold;
     padding: 4px 8px;
     color: #444;
     margin: 0 0 10px;
 }
 
-#side-navigation-menu a {
+.subcategories-section p.subCategoryTitle, .tertiarycategories-section p.tertiaryCategoryTitle {
+    font-weight: normal;
+    font-size: 18px;
+}
+
+#side-navigation-menu a, .subcategories-section a, .tertiarycategories-section a {
     padding: 4px 8px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     color: #444;
     display: block;
     transition: 0.3s;
+    cursor: pointer;
+    position: relative;
 }
 
-#side-navigation-menu a span {
+#side-navigation-menu a span, .subcategories-section a span, .tertiarycategories-section a span {
     float: right;
     font-size: 12px;
 }
 
-#side-navigation-menu a:hover {
-    color: #E30047;
-    background-color: #e3004717;
-    text-decoration: underline;
+/* #side-navigation-menu a .subcategories {
+    display: none;
+    position: absolute;
+    left: 100px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
-#side-navigation-menu .closebtn {
+.side-navigation-menu a:hover .subcategories {
+    display: block;
+} */
+
+#side-navigation-menu a:hover, .subcategories-section  a:hover, .tertiarycategories-section a:hover {
+    color: #E30047;
+    background-color: #e3004717;
+    /* text-decoration: underline; */
+}
+
+#side-navigation-menu .closebtn, .subcategories-section .closebtn, .tertiarycategories-section .closebtn {
     position: absolute;
     top: 10px;
     right: 12px;
     font-size: 16px;
     padding: 0;
     cursor: pointer;
+}
+
+/* SUB CATEGORY SECTION */
+.subcategories-section {
+    margin-left: 200px;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 56px;
+    /* left: 200px; */
+    border: 1px solid #dedede;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+/* Tertiary Categories */
+.tertiarycategories-section {
+    margin-left: 400px;
+    height: 100%;
+    width: 220px;
+    position: fixed;
+    z-index: 1;
+    top: 56px;
+    /* left: 200px; */
+    border: 1px solid #dedede;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    opacity: 1;
 }
 
 /* Mobile style */
@@ -314,7 +368,7 @@ body {
     #top-menu .help-ac-cart-section .cart-section span:nth-child(1) {}
     #top-menu .help-ac-cart-section .cart-section span:nth-child(2) {}
     /* SIDE NAVIGATION MENU */
-    #side-navigation-menu {
+    #side-navigation-menu, .subcategories-section {
         top: 96px;
     }
 }

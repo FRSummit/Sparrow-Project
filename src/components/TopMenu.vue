@@ -118,10 +118,51 @@
       <a class="closebtn" @click="closeNav()">
         <i class="fas fa-arrow-left"></i>
       </a>
-      <a href="#">About<span><i class="fas fa-chevron-right"></i></span></a>
-      <a href="#">Services<span><i class="fas fa-chevron-right"></i></span></a>
-      <a href="#">Clients<span><i class="fas fa-chevron-right"></i></span></a>
-      <a href="#">Contact<span><i class="fas fa-chevron-right"></i></span></a>
+      <div v-for="(item, i) in categories" :key="i">
+        <a @click="categoryClick(item)">
+          <!-- Electronics -->
+          {{ item }}
+          <span>
+            <i class="fas fa-chevron-right"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <!-- SubCategory -->
+    <div class="subcategories-section">
+      <p>Sub categories</p>
+      <a class="closebtn" @click="closeSubCategory()">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+      <p class="subCategoryTitle">{{ subCategoryTitle }}</p>
+      <div v-for="(item, i) in subCategories" :key="i">
+        <a @click="subCategoryClick(item)">
+          <!-- Electronics -->
+          {{ item }}
+          <span>
+            <i class="fas fa-chevron-right"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Tertiary Category -->
+    <div class="tertiarycategories-section">
+      <p>Tertiary categories</p>
+      <a class="closebtn" @click="closeTertiaryCategory()">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+      <p class="tertiaryCategoryTitle">{{ tertiaryCategoryTitle }}</p>
+      <div v-for="(item, i) in tertiaryCategories" :key="i">
+        <a @click="tertiaryCategoryClick(item)">
+          <!-- Electronics -->
+          {{ item }}
+          <span>
+            <i class="fas fa-chevron-right"></i>
+          </span>
+        </a>
+      </div>
     </div>
 
     <!-- <div class="topnav" id="myTopnav">
@@ -140,6 +181,176 @@
 export default {
   name: "TopMenu",
   components: {},
+  data() {
+    return {
+      categories: [
+        "Electronics",
+        "Accessories",
+        "Men's Fashion",
+        "Women's Fashion",
+        "Ornaments",
+        "Gift Ideas",
+        "Baking Items",
+        "Flower",
+      ],
+      //Sub-Category
+      subCategoryTitle: null,
+      subCategories: [],
+      subElectronics: ["Electrical", "Lighting"],
+      subAccessories: ["Mobile", "Computer", "Audio", "Watch"],
+      subMenFashion: ["Clothing", "Foot Wear", "Accessories"],
+      subWomenFashion: ["Clothing", "Foot Wear", "Accessories"],
+      subOrnaments: [],
+      subGiftIdeas: ["Birthday Gifts", "Aniversary Gifts", "Valentine Gifts"],
+      subBakingItems: [],
+      subFlower: [],
+      //Tertiary-Category
+      tertiaryCategoryTitle: null,
+      tertiaryCategories: [],
+      tertiaryElectrical: [
+        "Blender",
+        "Grinder",
+        "Juicer",
+        "Treamer & Shaver",
+        "Hair Dryer",
+      ],
+      tertiaryLighting: ["Table Lamp", "Energy Light"],
+      ourRange: [
+        {
+          id: 1,
+          name: "Leanne Graham",
+          username: "Bret",
+          email: "Sincere@april.biz",
+          address: {
+            street: "Kulas Light",
+            suite: "Apt. 556",
+            city: "Gwenborough",
+            zipcode: "92998-3874",
+            geo: {
+              lat: "-37.3159",
+              lng: "81.1496",
+            },
+          },
+          phone: "1-770-736-8031 x56442",
+          website: "hildegard.org",
+          company: {
+            name: "Romaguera-Crona",
+            catchPhrase: "Multi-layered client-server neural-net",
+            bs: "harness real-time e-markets",
+          },
+        },
+        {
+          id: 2,
+          name: "Ervin Howell",
+          username: "Antonette",
+          email: "Shanna@melissa.tv",
+          address: {
+            street: "Victor Plains",
+            suite: "Suite 879",
+            city: "Wisokyburgh",
+            zipcode: "90566-7771",
+            geo: {
+              lat: "-43.9509",
+              lng: "-34.4618",
+            },
+          },
+          phone: "010-692-6593 x09125",
+          website: "anastasia.net",
+          company: {
+            name: "Deckow-Crist",
+            catchPhrase: "Proactive didactic contingency",
+            bs: "synergize scalable supply-chains",
+          },
+        },
+        {
+          id: 3,
+          name: "Clementine Bauch",
+          username: "Samantha",
+          email: "Nathan@yesenia.net",
+          address: {
+            street: "Douglas Extension",
+            suite: "Suite 847",
+            city: "McKenziehaven",
+            zipcode: "59590-4157",
+            geo: {
+              lat: "-68.6102",
+              lng: "-47.0653",
+            },
+          },
+          phone: "1-463-123-4447",
+          website: "ramiro.info",
+          company: {
+            name: "Romaguera-Jacobson",
+            catchPhrase: "Face to face bifurcated interface",
+            bs: "e-enable strategic applications",
+          },
+        },
+        {
+          id: 4,
+          name: "Patricia Lebsack",
+          username: "Karianne",
+          email: "Julianne.OConner@kory.org",
+          address: {
+            street: "Hoeger Mall",
+            suite: "Apt. 692",
+            city: "South Elvis",
+            zipcode: "53919-4257",
+            geo: {
+              lat: "29.4572",
+              lng: "-164.2990",
+            },
+          },
+          phone: "493-170-9623 x156",
+          website: "kale.biz",
+          company: {
+            name: "Robel-Corkery",
+            catchPhrase: "Multi-tiered zero tolerance productivity",
+            bs: "transition cutting-edge web services",
+          },
+        },
+      ],
+      ourRange2: [
+        {
+          id: 1,
+          name: "Category",
+          product: "Electronics",
+          subCategory: [
+            {
+              name: "Sub Category",
+              product: "Electrical",
+              tertiaryCategory: [
+                {
+                  product: "Blender",
+                },
+                {
+                  product: "Grinder",
+                },
+              ],
+            },
+          ],
+        },
+        {
+          id: 2,
+          name: "Category",
+          product: "Accessories",
+          subCategory: [
+            {
+              name: "Sub Category",
+              product: "Mobile",
+              tertiaryCategory: [
+                {
+                  product: "Phone Cover and Case",
+                },
+                {
+                  product: "Phone Charger",
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    };
+  },
   methods: {
     // myFunction() {
     //   var x = document.getElementById("myTopnav");
@@ -161,12 +372,55 @@ export default {
     closeNav() {
       document.getElementById("side-navigation-menu").style.width = "0";
     },
+    categoryClick(categoryName) {
+      this.subCategoryTitle = categoryName;
+      //   console.log(this.ourRange)
+        console.log(this.ourRange2)
+      //   for (let i = 0; i < this.categories.length; i++) {
+      for (let i = 0; i < 2; i++) {
+        // console.log(this.ourRange[i].id)
+        // console.log(this.ourRange[i].address.geo.lat);
+        // if (categoryName === this.categories[i]) console.log(i);
+        // else console.log("not found");
+        // console.log(this.ourRange2)
+      }
+      if (categoryName === "Electronics") {
+        this.subCategories = this.subElectronics;
+      }
+      if (categoryName === "Accessories") {
+        this.subCategories = this.subAccessories;
+      }
+      if (categoryName === "Men's Fashion") {
+        this.subCategories = this.subMenFashion;
+      }
+      if (categoryName === "Women's Fashion") {
+        this.subCategories = this.subWomenFashion;
+      }
+      if (categoryName === "Ornaments") {
+        this.subCategories = this.subOrnaments;
+      }
+      if (categoryName === "Gift Ideas") {
+        this.subCategories = this.subGiftIdeas;
+      }
+      if (categoryName === "Baking Items") {
+        this.subCategories = this.subBakingItems;
+      }
+      if (categoryName === "Flower") {
+        this.subCategories = this.subFlower;
+      }
+    },
+    subCategoryClick(subCategoryName) {
+      this.tertiaryCategoryTitle = subCategoryName;
+      if (subCategoryName === "Electrical") {
+        this.tertiaryCategories = this.tertiaryElectrical;
+      }
+    },
   },
 };
 </script>
 
 <style scoped>
-.topnav {
+/* .topnav {
   overflow: hidden;
   background-color: #333;
 }
@@ -219,5 +473,5 @@ export default {
     display: block;
     text-align: left;
   }
-}
+} */
 </style>
