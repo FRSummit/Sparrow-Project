@@ -1,18 +1,20 @@
 <template>
   <div class="home">
-    This is home page
+    <Slider />
+    This is home
   </div>
 </template>
 
 <script>
-// import $ from 'jQuery'
+import Slider from '../components/Slider/Slider'
 
 export default {
   name: 'Home',
   components: {
+    Slider,
   },
   created() {
-    // console.log($('.home'))
+    console.log("Home")
   }
 }
 </script>
