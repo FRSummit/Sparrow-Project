@@ -235,14 +235,14 @@
                 data-easein="Power4.easeInOut"
                 data-easeout="Power4.easeInOut"
                 data-masterspeed="2000"
-                data-thumb="../../superb-template/images/slide-img2.jpg"
+                data-thumb="../../superb-template/images/video-img.png"
                 data-rotate="0"
                 data-saveperformance="off"
                 data-title="HTML5 Video"
                 data-description
               >
                 <!-- MAIN IMAGE -->
-                <img src="../../superb-template/images/slide-img2.jpg" alt />
+                <img src="../../superb-template/images/video-img.png" alt />
                 <!-- LAYERS -->
 
                 <!-- BACKGROUND VIDEO LAYER -->
