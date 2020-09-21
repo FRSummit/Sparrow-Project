@@ -5,6 +5,9 @@
     <FeaturedSlider />
     <PromotionBanner />
     <PromoProducts />
+    <LatestBlog />
+    <CompanyLogo />
+    <FeatureBox />
   </div>
 </template>
 
@@ -14,6 +17,9 @@ import PromoSection from '../components/Home/PromoSection'
 import FeaturedSlider from '../components/Home/FeaturedSlider'
 import PromotionBanner from '../components/Home/PromotionBanner'
 import PromoProducts from '../components/Home/PromoProducts'
+import LatestBlog from '../components/Home/LatestBlog'
+import CompanyLogo from '../components/Home/CompanyLogo'
+import FeatureBox from '../components/Home/FeatureBox'
 
 export default {
   name: 'Home',
@@ -23,6 +29,9 @@ export default {
     FeaturedSlider,
     PromotionBanner,
     PromoProducts,
+    LatestBlog,
+    CompanyLogo,
+    FeatureBox,
   },
   created() {
     console.log("Home")
