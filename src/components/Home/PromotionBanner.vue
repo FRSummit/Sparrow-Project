@@ -1,0 +1,13 @@
+<template>
+  <div class="offer-slider parallax parallax-2">
+    <div class="container">
+      <h2>Deals of the day</h2>
+      <div class="starSeparator"></div>
+      <p>Superb Men's clothing store is updated regularly with offers.</p>
+      <div class="box-timer">
+        <div class="countbox_1 timer-grid"></div>
+      </div>
+      <a href="#" class="shop-now">Shop Now</a>
+    </div>
+  </div>
+</template>

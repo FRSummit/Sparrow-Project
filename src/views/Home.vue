@@ -3,6 +3,8 @@
     <Slider />
     <PromoSection />
     <FeaturedSlider />
+    <PromotionBanner />
+    <PromoProducts />
   </div>
 </template>
 
@@ -10,6 +12,8 @@
 import Slider from '../components/Slider/Slider'
 import PromoSection from '../components/Home/PromoSection'
 import FeaturedSlider from '../components/Home/FeaturedSlider'
+import PromotionBanner from '../components/Home/PromotionBanner'
+import PromoProducts from '../components/Home/PromoProducts'
 
 export default {
   name: 'Home',
@@ -17,6 +21,8 @@ export default {
     Slider,
     PromoSection,
     FeaturedSlider,
+    PromotionBanner,
+    PromoProducts,
   },
   created() {
     console.log("Home")
