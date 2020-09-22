@@ -1,5 +1,13 @@
 <template>
-  <div class="contact">
-    <h1>This is contact us page</h1>
-  </div>
+  <Contact />
 </template>
+
+<script>
+import Contact from '../components/Contact/Contact'
+
+export default {
+  components: {
+    Contact,
+  }
+}
+</script>

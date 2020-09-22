@@ -37,7 +37,7 @@
               </div>
               <div class="item-info">
                 <div class="info-inner">
-                  <div class="item-title"> <a :title="item.product_title" :href="product_title_url">{{ item.product_title }}</a> </div>
+                  <div class="item-title"> <a :title="item.product_title">{{ item.product_title }}</a> </div>
                   <div class="item-content">
                     <div class="item-price">
                       <div class="price-box"> <span class="regular-price"> <span class="price">BDT {{ item.product_price }}</span> </span> </div>
@@ -76,7 +76,6 @@ export default {
                     rating_url: "#",
                     rating_reviews: "1 Review(s)",
                     add_review_url: "#",
-                    product_title_url: "#",
                     product_title: "Retis lapen casen",
                     product_price: "125.00"
                 },
@@ -96,7 +95,6 @@ export default {
                     rating_url: "",
                     rating_reviews: "1 Review(s)",
                     add_review_url: "#",
-                    product_title_url: "",
                     product_title: "Retis lapen casen",
                     product_price: "125.00"
                 },
@@ -116,7 +114,6 @@ export default {
                     rating_url: "",
                     rating_reviews: "1 Review(s)",
                     add_review_url: "#",
-                    product_title_url: "",
                     product_title: "Retis lapen casen",
                     product_price: "125.00"
                 },
@@ -136,7 +133,6 @@ export default {
                     rating_url: "",
                     rating_reviews: "1 Review(s)",
                     add_review_url: "#",
-                    product_title_url: "",
                     product_title: "Retis lapen casen",
                     product_price: "125.00"
                 },
@@ -156,7 +152,6 @@ export default {
                     rating_url: "",
                     rating_reviews: "1 Review(s)",
                     add_review_url: "",
-                    product_title_url: "",
                     product_title: "Retis lapen casen",
                     product_price: "125.00"
                 },
@@ -176,7 +171,6 @@ export default {
                     rating_url: "",
                     rating_reviews: "1 Review(s)",
                     add_review_url: "",
-                    product_title_url: "",
                     product_title: "Retis lapen casen",
                     product_price: "125.00"
                 },
@@ -196,7 +190,6 @@ export default {
                     rating_url: "",
                     rating_reviews: "1 Review(s)",
                     add_review_url: "",
-                    product_title_url: "",
                     product_title: "Retis lapen casen",
                     product_price: "125.00"
                 },

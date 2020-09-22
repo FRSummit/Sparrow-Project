@@ -1,5 +1,18 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <AboutUs />
+    <!-- <CompanyLogo /> -->
   </div>
 </template>
+
+<script>
+import AboutUs from '../components/About/AboutUs'
+// import CompanyLogo from '../components/Home/CompanyLogo'
+
+export default {
+  components: {
+    AboutUs,
+    // CompanyLogo
+  }
+}
+</script>

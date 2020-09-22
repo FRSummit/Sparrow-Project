@@ -331,7 +331,7 @@
                   <div class="col-2">
                     <div class="menu_image">
                       <a href="#" title>
-                        <img src="images/menu_image.png" alt="menu_image" />
+                        <img src="../../superb-template/images/menu_image.png" alt="menu_image" />
                       </a>
                     </div>
                   </div>

@@ -1,5 +1,13 @@
 <template>
-  <div class="blog">
-    <h1>This is a blog page</h1>
-  </div>
+  <Blog />
 </template>
+
+<script>
+import Blog from '../components/Blog/Blog'
+
+export default {
+  components: {
+    Blog,
+  }
+}
+</script>
