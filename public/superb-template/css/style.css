@@ -576,15 +576,16 @@ header .header-top-links {
 
 .welcome-msg {
 	text-align: left;
-	display: inline-block;
-	padding: 0px;
-	margin: 0px 14px;
-	font-size: 11px;
-	color: #C2A476;
-	vertical-align: top;
-	margin-top: 12px;
-	text-transform: uppercase;
-	letter-spacing: 1px
+    display: inline-block;
+    padding: 0px;
+    margin: 0px 14px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #C2A476;
+    vertical-align: top;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 /* language &amp; currency */

@@ -21,7 +21,7 @@
                 <div id="search">
                   <div class="input-group">
                     <input name="search" placeholder="Search" class="form-control" type="text" />
-                    <button type="button" class="btn-search">
+                    <button @click="searchBtnClick" type="button" class="btn-search">
                       <i class="fa fa-search"></i>
                     </button>
                   </div>
@@ -34,3 +34,13 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    searchBtnClick() {
+      alert('Searching...');
+    }
+  }
+}
+</script>

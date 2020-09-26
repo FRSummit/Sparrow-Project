@@ -17,7 +17,7 @@ import Footer from "./components/Footer/Footer";
 import MobileMenu from "./components/Navbar/MobileMenu";
 
 export default {
-  name: "Home",
+  name: "App",
   components: {
     Header,
     Navbar,

@@ -66,7 +66,7 @@ const routes = [
     component: () => import('../views/AddressBook.vue'),
   },
   {
-    path: '/checkout',
+    path: '/checkout',//done adding url
     name: 'Checkout',
     component: () => import('../views/Checkout.vue'),
   },
@@ -101,7 +101,7 @@ const routes = [
     component: () => import('../views/Product/ListView.vue'),
   },
   {
-    path: '/shopping-cart',
+    path: '/shopping-cart',//done adding url
     name: 'Shopping Cart',
     component: () => import('../views/ShoppingCart/ShoppingCart.vue'),
   },
